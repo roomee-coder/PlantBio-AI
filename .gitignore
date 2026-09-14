@@ -1,0 +1,19 @@
+# --- Backend (Python) ---
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+backend/.env
+backend/*.db
+
+# --- Environment files (never commit real keys) ---
+.env
+*.env
+!.env.example
+
+# --- Editor / OS ---
+.vscode/
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
