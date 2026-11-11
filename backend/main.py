@@ -38,7 +38,7 @@ def serve_index():
 
 @app.get("/status")
 def get_status():
-  return {"status": "ok", "message": "PlantBio AI backend is running"}
+  return {"status": "ok", "message": "PlantBio AI backend is running", "code":"200"}
  
 @app.post("/records", response_model=schemas.CultureRecordOut)
 def create_record(record: schemas.CultureRecordCreate, db: Session = Depends(get_db)):
