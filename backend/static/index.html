@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlantBio AI — Plant Biotechnology Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6">
+          <path d="M12 21c0-7 3-12 8-15-1 7-3 12-8 15Z"/>
+          <path d="M12 21c0-7-3-12-8-15 1 7 3 12 8 15Z"/>
+          <path d="M12 21V9"/>
+        </svg>
+      </span>
+      <span>PlantBio<em>AI</em></span>
+    </a>
+    <nav>
+      <a href="#modules">Modules</a>
+      <a href="#ai">AI Assistant</a>
+      <a href="#protocol">Workflow</a>
+      <a href="#tools">Lab Tools</a>
+      <a href="#lab">Research Lab</a>
+      <a href="#pathology">Pathology</a>
+      <a href="#library">Plant Library</a>
+    </nav>
+    <a class="btn btn-primary" href="#ai">Try AI</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <span class="glow"></span>
+    <svg class="mountains" viewBox="0 0 1600 500" preserveAspectRatio="none">
+      <polygon class="m-back" points="0,500 0,260 220,120 430,240 650,90 900,230 1120,110 1350,250 1600,150 1600,500"/>
+      <polygon class="m-mid" points="0,500 0,340 260,200 520,320 760,190 1020,330 1280,210 1600,320 1600,500"/>
+      <polygon class="m-front" points="0,500 0,410 180,330 380,420 600,320 860,430 1120,340 1380,430 1600,360 1600,500"/>
+    </svg>
+    <svg class="pines" viewBox="0 0 1600 120" preserveAspectRatio="none">
+      <g class="pine-row">
+        <path d="M40,120 L60,70 L70,90 L80,55 L92,80 L104,45 L118,80 L128,60 L145,120Z"/>
+        <path d="M220,120 L238,75 L248,92 L258,60 L270,85 L282,50 L296,85 L306,65 L322,120Z"/>
+        <path d="M420,120 L438,70 L448,90 L458,55 L470,80 L482,45 L496,80 L506,60 L522,120Z"/>
+        <path d="M640,120 L658,75 L668,92 L678,60 L690,85 L702,50 L716,85 L726,65 L742,120Z"/>
+        <path d="M880,120 L898,70 L908,90 L918,55 L930,80 L942,45 L956,80 L966,60 L982,120Z"/>
+        <path d="M1100,120 L1118,75 L1128,92 L1138,60 L1150,85 L1162,50 L1176,85 L1186,65 L1202,120Z"/>
+        <path d="M1340,120 L1358,70 L1368,90 L1378,55 L1390,80 L1402,45 L1416,80 L1426,60 L1442,120Z"/>
+      </g>
+    </svg>
+  </div>
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">AI-powered plant science platform</span>
+      <h1>GROW SMARTER.<br>RESEARCH FASTER.</h1>
+      <p>One workspace for plant biotechnology, tissue culture, plant pathology and scientific research.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#ai">Ask PlantBio AI</a>
+        <a class="btn btn-outline" href="#modules">Explore modules</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>6+</strong><span>Research modules</span></div>
+        <div class="stat"><strong>AI</strong><span>Scientific assistant</span></div>
+        <div class="stat"><strong>24/7</strong><span>Lab support</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="dashboard">
+        <div class="dash-top"><strong>Research Dashboard</strong><span><i class="dot"></i>AI Online</span></div>
+        <div class="ai-card">
+          <small>AI TISSUE CULTURE ANALYSIS</small>
+          <h3>Banana shoot-tip culture</h3>
+          <p>Potential issue detected: phenolic browning.</p>
+        </div>
+        <div class="mini-grid">
+          <div class="mini"><span>Culture health</span><b>82%</b></div>
+          <div class="mini"><span>Contamination</span><b>Low</b></div>
+          <div class="mini"><span>Shoots / explant</span><b>4.6</b></div>
+          <div class="mini"><span>Rooting</span><b>76%</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modules">
+<div class="container">
+  <div class="section-head">
+    <div><span class="catalog-no">No. 01</span><h2>Everything your plant lab needs</h2></div>
+    <p>Designed for students, researchers, tissue-culture laboratories and plant pathology professionals.</p>
+  </div>
+  <div class="features">
+    <article class="card"><div class="icon">T.C.</div><h3>Tissue Culture Lab</h3><p>Build, search and troubleshoot in-vitro culture workflows.</p><ul><li>Protocol database</li><li>Culture troubleshooting</li><li>Media & PGR tools</li></ul></article>
+    <article class="card"><div class="icon">P.P.</div><h3>Plant Pathology</h3><p>Explore symptoms, pathogens and disease-management knowledge.</p><ul><li>AI image diagnosis</li><li>Disease database</li><li>Symptom analysis</li></ul></article>
+    <article class="card"><div class="icon">R.A.</div><h3>Research AI</h3><p>Turn scientific literature into useful research insights.</p><ul><li>Paper analysis</li><li>Research-gap discovery</li><li>Question generator</li></ul></article>
+    <article class="card"><div class="icon">R.L.</div><h3>Research Lab</h3><p>Record experiments and transform observations into results.</p><ul><li>Experiment manager</li><li>Charts & statistics</li><li>Image quantification</li></ul></article>
+    <article class="card"><div class="icon">P.D.</div><h3>Plant Database</h3><p>Explore species, explants, protocols, diseases and references.</p><ul><li>Species profiles</li><li>Protocol records</li><li>Scientific references</li></ul></article>
+    <article class="card"><div class="icon">S.Z.</div><h3>Student Zone</h3><p>Make plant biotechnology easier to learn and practice.</p><ul><li>Interactive learning</li><li>Viva questions</li><li>Virtual lab simulations</li></ul></article>
+  </div>
+</div>
+</section>
+
+<section id="ai" class="ai-section">
+<div class="container">
+  <div class="section-head">
+    <div><span class="catalog-no">No. 02</span><h2>Meet your PlantBio AI assistant</h2></div>
+    <p>Ask scientific questions in natural language and connect answers to your curated knowledge base and literature.</p>
+  </div>
+  <div class="ai-box">
+    <div class="ai-panel">
+      <h3>Ask a research question</h3>
+      <div class="prompt" data-sample>"My banana explants are browning after 5 days. What could be causing it?"</div>
+      <div class="prompt" data-sample>"Compare BAP and TDZ for shoot multiplication."</div>
+      <div class="prompt" data-sample>"Find research gaps in turmeric micropropagation."</div>
+      <label>Or type your own question</label>
+      <textarea id="aiQuestion" rows="3" placeholder="Ask anything about plant biotechnology…"></textarea>
+      <button class="btn btn-primary" style="width:100%" onclick="askRealAI()">Ask PlantBio AI</button>
+    </div>
+    <div class="answer" id="aiAnswerBox">
+      <strong>AI analysis</strong>
+      <p style="margin:8px 0 14px">Browning may be associated with phenolic oxidation, explant injury, culture conditions or other factors. Consider reviewing the explant source, sterilization stress and medium/PGR conditions.</p>
+      <b>Suggested investigation</b>
+      <ul style="margin:8px 0 0 18px">
+        <li>Compare younger vs. older explants.</li>
+        <li>Record browning over time.</li>
+        <li>Compare suitable antioxidant treatments reported in literature.</li>
+        <li>Check medium pH and culture conditions.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section id="protocol">
+<div class="container">
+  <div class="section-head">
+    <div><span class="catalog-no">No. 03</span><h2>From explant to plant</h2></div>
+    <p>Turn a tissue-culture idea into a structured experimental workflow.</p>
+  </div>
+  <div class="protocol">
+    <div class="step"><span>01</span><h3>Explant</h3><p>Select species and suitable explant material.</p></div>
+    <div class="step"><span>02</span><h3>Sterilization</h3><p>Record the selected surface-sterilization workflow.</p></div>
+    <div class="step"><span>03</span><h3>Culture</h3><p>Choose basal medium and experimental PGR conditions.</p></div>
+    <div class="step"><span>04</span><h3>Multiplication</h3><p>Track shoots, callus, growth and contamination.</p></div>
+    <div class="step"><span>05</span><h3>Rooting</h3><p>Record rooting response and root development.</p></div>
+    <div class="step"><span>06</span><h3>Acclimatization</h3><p>Track survival during transfer to ex-vitro conditions.</p></div>
+    <div class="step"><span>07</span><h3>Analyze</h3><p>Compare treatments with charts and statistics.</p></div>
+    <div class="step"><span>08</span><h3>Publish</h3><p>Export organized experimental observations and references.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="tools">
+<div class="container">
+  <div class="section-head">
+    <div><span class="catalog-no">No. 04</span><h2>Smart lab tools</h2></div>
+    <p>Useful calculators and image-analysis entry points for everyday laboratory work.</p>
+  </div>
+  <div class="tools">
+    <div class="tool">
+      <div class="tool-header"><div class="icon">Cal.</div><div><h3>Medium / PGR Calculator</h3><p style="color:var(--muted)">Calculate stock-solution volume.</p></div></div>
+      <label>Stock concentration (mg/mL)</label><input id="stock" type="number" value="1" min="0">
+      <label>Required concentration (mg/L)</label><input id="req" type="number" value="2" min="0">
+      <label>Medium volume (mL)</label><input id="volume" type="number" value="500" min="0">
+      <button class="btn btn-primary" onclick="calculate()">Calculate</button>
+      <div class="result" id="calcResult">Required stock volume: 1.00 mL</div>
+    </div>
+    <div class="tool">
+      <div class="tool-header"><div class="icon">Img.</div><div><h3>Culture Image Analyzer</h3><p style="color:var(--muted)">AI-ready image analysis module.</p></div></div>
+      <label for="fileInput" style="display:block">
+        <div class="upload" id="uploadBox">Drop a culture image here<br><small>PNG, JPG up to 10 MB</small></div>
+      </label>
+      <input type="file" id="fileInput" accept="image/*" style="display:none">
+      <button class="btn btn-outline" style="width:100%" onclick="demoAnalysis()">Run analysis</button>
+      <div class="result" id="imageResult">Waiting for image analysis…</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="lab">
+<div class="container">
+  <div class="section-head">
+    <div><span class="catalog-no">No. 05</span><h2>Research Lab</h2></div>
+    <p>Log culture records to your database and see them listed live below.</p>
+  </div>
+  <div class="tools">
+    <div class="tool">
+      <div class="tool-header"><div class="icon">Rec.</div><div><h3>New culture record</h3><p style="color:var(--muted)">Saved to your backend database.</p></div></div>
+      <form id="recordForm">
+        <label>Species</label>
+        <input id="f-species" type="text" placeholder="e.g. Musa acuminata" required>
+        <label>Explant type</label>
+        <input id="f-explant" type="text" placeholder="e.g. shoot tip" required>
+        <label>Treatment</label>
+        <input id="f-treatment" type="text" placeholder="e.g. BAP 2mg/L">
+        <label>Shoots / explant</label>
+        <input id="f-shoots" type="number" step="0.1" min="0" placeholder="e.g. 4.6">
+        <label>Contamination status</label>
+        <select id="f-contamination">
+          <option value="">—</option>
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+        </select>
+        <label>Rooting %</label>
+        <input id="f-rooting" type="number" step="0.1" min="0" max="100" placeholder="e.g. 76">
+        <label>Notes</label>
+        <textarea id="f-notes" rows="2" placeholder="Optional notes"></textarea>
+        <button class="btn btn-primary" type="submit" style="width:100%">Save record</button>
+      </form>
+      <div class="result" id="formStatus"></div>
+    </div>
+    <div class="tool">
+      <div class="tool-header"><div class="icon">List</div><div><h3>Saved records</h3><p style="color:var(--muted)">Pulled live from the database.</p></div></div>
+      <button class="btn btn-outline" style="width:100%;margin-bottom:12px" onclick="loadRecords()">Refresh list</button>
+      <div id="recordsList">Loading…</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="pathology">
+<div class="container">
+  <div class="section-head">
+    <div><span class="catalog-no">No. 06</span><h2>Plant Pathology</h2></div>
+    <p>Build a disease/symptom reference database and search it by symptom.</p>
+  </div>
+  <div class="tools">
+    <div class="tool">
+      <div class="tool-header"><div class="icon">Dis.</div><div><h3>New disease record</h3><p style="color:var(--muted)">Saved to your backend database.</p></div></div>
+      <form id="diseaseForm">
+        <label>Disease name</label>
+        <input id="d-name" type="text" placeholder="e.g. Panama disease" required>
+        <button type="button" class="btn btn-outline" style="width:100%;margin-bottom:12px" onclick="autofillDisease()">Autofill with AI</button>
+        <div class="result" id="autofillStatus" style="display:none;margin-bottom:12px"></div>
+        <label>Pathogen</label>
+        <input id="d-pathogen" type="text" placeholder="e.g. Fusarium oxysporum f. sp. cubense">
+        <label>Pathogen type</label>
+        <select id="d-pathogen-type">
+          <option value="">—</option>
+          <option>Fungus</option>
+          <option>Bacteria</option>
+          <option>Virus</option>
+          <option>Nematode</option>
+          <option>Other</option>
+        </select>
+        <label>Host species</label>
+        <input id="d-host" type="text" placeholder="e.g. Banana (Musa spp.)">
+        <label>Symptoms</label>
+        <textarea id="d-symptoms" rows="2" placeholder="e.g. Yellowing leaves, wilting, vascular browning" required></textarea>
+        <label>Management</label>
+        <textarea id="d-management" rows="2" placeholder="Optional control/management notes"></textarea>
+        <label>Notes</label>
+        <textarea id="d-notes" rows="2" placeholder="Optional additional notes"></textarea>
+        <button class="btn btn-primary" type="submit" style="width:100%">Save disease record</button>
+      </form>
+      <div class="result" id="diseaseFormStatus"></div>
+    </div>
+    <div class="tool">
+      <div class="tool-header"><div class="icon">Sym.</div><div><h3>Symptom search</h3><p style="color:var(--muted)">Find diseases matching a symptom.</p></div></div>
+      <label>Search by symptom</label>
+      <input id="symptomSearch" type="text" placeholder="e.g. wilting">
+      <button class="btn btn-outline" style="width:100%;margin-bottom:12px" onclick="searchDiseases()">Search</button>
+      <button class="btn btn-outline" style="width:100%;margin-bottom:12px" onclick="loadAllDiseases()">Show all records</button>
+      <div id="diseasesList">Loading…</div>
+    </div>
+    <div class="tool" style="grid-column:1 / -1">
+      <div class="tool-header"><div class="icon">Dx.</div><div><h3>AI Diagnosis</h3><p style="color:var(--muted)">Describe symptoms — AI checks your database plus general knowledge.</p></div></div>
+      <label>Describe what you're observing</label>
+      <textarea id="diagnoseSymptoms" rows="3" placeholder="e.g. Yellowing lower leaves, wilting starting on one side, brown discoloration inside the stem when cut"></textarea>
+      <button class="btn btn-primary" style="width:100%" onclick="runDiagnosis()">Diagnose</button>
+      <div class="answer" id="diagnoseResult" style="margin-top:14px">Describe symptoms above to get a diagnosis suggestion.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section id="library">
+<div class="container">
+  <div class="section-head">
+    <div><span class="catalog-no">No. 07</span><h2>Plant Library</h2></div>
+    <p>Search a plant by name for an AI-generated reference profile — cached after the first search.</p>
+  </div>
+  <div class="tool" style="max-width:none">
+    <div class="tool-header"><div class="icon">Lib.</div><div><h3>Search the library</h3><p style="color:var(--muted)">Common or scientific name.</p></div></div>
+    <label>Plant name</label>
+    <input id="plantSearchName" type="text" placeholder="e.g. Musa acuminata, turmeric, Arabidopsis thaliana">
+    <button class="btn btn-primary" style="width:100%" onclick="searchPlantLibrary()">Search</button>
+    <div id="plantProfileResult" style="margin-top:20px">Search for a plant to see its profile.</div>
+  </div>
+
+  <div class="tool" style="max-width:none;margin-top:18px">
+    <div class="tool-header"><div class="icon">All</div><div><h3>Saved profiles</h3><p style="color:var(--muted)">Previously generated plants, cached in your database.</p></div></div>
+    <button class="btn btn-outline" style="width:100%;margin-bottom:12px" onclick="loadPlantLibraryList()">Refresh list</button>
+    <div id="plantLibraryList">Loading…</div>
+  </div>
+</div>
+</section>
+
+
+<section>
+<div class="container">
+  <div class="cta">
+    <h2>Build the future of plant science.</h2>
+    <p>Start with a focused MVP, then expand into AI diagnosis, research intelligence and digital laboratory tools.</p>
+    <a class="btn btn-primary" href="#ai">Launch PlantBio AI</a>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer">
+  <div><b>PlantBio AI</b> — Plant biotechnology, tissue culture & pathology.</div>
+  <div>Developed by Roomee · 2026</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

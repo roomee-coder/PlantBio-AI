@@ -3,6 +3,7 @@ from typing import List
 from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
+from fastapi.staticfiles import StaticFiles
 
 import models
 import schemas
@@ -24,8 +25,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 @app.get("/")
+def root():
+    return {"status": "ok", "message": "PlantBio AI backend is running"}
+
+@app.get("/status")
 def root():
     return {"status": "ok", "message": "PlantBio AI backend is running"}
 
