@@ -3,6 +3,7 @@ from typing import List
 from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 import models
@@ -25,17 +26,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+# 1. Mount static files (CSS, JS, images) under /static
+app.mount("/static", StaticFiles(directory="static"), name="static")
+
 
 @app.get("/")
-def root():
-    return {"status": "ok", "message": "PlantBio AI backend is running"}
+def serve_index():
+  """Serves the frontend index.html at the root URL."""
+  return FileResponse("static/index.html")
+
 
 @app.get("/status")
-def root():
-    return {"status": "ok", "message": "PlantBio AI backend is running"}
-
-
+def get_status():
+  return {"status": "ok", "message": "PlantBio AI backend is running"}
+ 
 @app.post("/records", response_model=schemas.CultureRecordOut)
 def create_record(record: schemas.CultureRecordCreate, db: Session = Depends(get_db)):
     db_record = models.CultureRecord(**record.model_dump())
