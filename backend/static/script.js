@@ -1,6 +1,6 @@
 // ---- Backend API base URL ----
 // Change this if your FastAPI server runs on a different host/port.
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = "https://plantbioai.onrender.com";
 
 // ---- Tiny Markdown renderer for AI responses (bold, headings, lists, rules) ----
 function escapeHtml(str){
